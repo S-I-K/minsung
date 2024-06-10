@@ -129,6 +129,33 @@ header.header-wrap .container a.logo img {
     flex-grow: unset;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+header .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .container a.logo img {}
+header .container #navbarResponsive {
+    display: flex;
+}
+header .container #navbarResponsive ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+header .container #navbarResponsive ul li {}
+header .container #navbarResponsive ul li:not(:last-child) {
+    margin-right: 60px;
+}
+header .container #navbarResponsive ul li a {}
 
 
 
@@ -451,6 +478,7 @@ footer .container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    width: 100%;
 }
 footer .container .footer-left {
     display: flex;
@@ -559,7 +587,7 @@ footer .container .footer-ul li span:not(:last-child)::after {
 }
 
 #wrap.about-wrap {
-    background: url('../img/ms/sub/about-wrap-img01.png') no-repeat center center / cover;
+    background: url('../../common/img/about-wrap-img01.png') no-repeat center center / cover;
 }
 #wrap.about-wrap::after {
     content: '';
@@ -578,6 +606,7 @@ footer .container .footer-ul li span:not(:last-child)::after {
     justify-content: center;
     align-items: flex-start;
     z-index: 2;
+    width: 100%;
 }
 #wrap.about-wrap .container .title-box {
     margin-bottom: 60px;
@@ -615,7 +644,7 @@ footer .container .footer-ul li span:not(:last-child)::after {
 
 /* history */
 #wrap.history-wrap {
-    background: url('../img/ms/sub/history-wrap-img01.png') no-repeat center center / cover;
+    background: url('../../common/img/history-wrap-img01.png') no-repeat center center / cover;
 }
 #wrap.history-wrap::after {
     content: '';
@@ -633,6 +662,7 @@ footer .container .footer-ul li span:not(:last-child)::after {
     align-items: center;
     justify-content: center;
     z-index: 2;
+    width: 100%;
 }
 
 #wrap.history-wrap .container .title-box {
@@ -1224,5 +1254,9 @@ form .regFormFrame .regFormList ul li:not(:last-child) {
 
     #smart_editor2 {
         width: 100%;
+    }
+
+    header .container #navbarResponsive ul {
+        display: none;
     }
 }
